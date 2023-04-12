@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contato | Kreativé Media</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- venobox css -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+  <!-- card slider -->
+  <link rel="stylesheet" href="plugins/card-slider/css/style.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/mobile.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./images/logos/favicon.png" type="image/x-icon">
+  <link rel="icon" href="./images/logos/favicon.png" type="image/x-icon">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('X3PNzd17cFz5YuEw8');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        let params = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("message").value
+        }
+
+        const serviceID = "service_uwwcldg";
+        const templateID = "template_ns9ssoc";
+        emailjs.send(serviceID, templateID, params)
+          .then(
+            (res) => {
+              console.log(res);
+              alert("Sua mensagem foi enviada.")
+            }
+          ).catch((err) => console.log(err));
+      });
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <a href="https://api.whatsapp.com/send?phone=5551981186661&text=Ol%C3%A1,%20tudo%20bem?%20Estou%20entrando%20em%20contato%20com%20a%20Kreativ%C3%A9%20Media%20porque%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20oferecidos%20pela%20ag%C3%AAncia."
+    class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+  <header class="header navigation" id="header">
+
+    <div class="container">
+
+      <label for="menu-control">
+        <i class="ti-menu menu-button"></i>
+      </label>
+
+      <a class="navbar-brand" href="index.html"><img class="brand-logo" src="images/logos/horizontal-white.png"
+          alt="Kreativé Media"></a>
+
+      <input type="checkbox" id="menu-control" class="menu-control">
+      <ul class="menu">
+        <li class="menu-item active">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="./about.html">Sobre nós</a>
+        </li>
+        <li class="menu-item">
+          <a href="#services">Serviços</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+
+  <!-- page-title -->
+  <section class="page-title bg-cover" data-background="./images/banner/banner2.png">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-1 text-white font-weight-bold font-primary">Contato</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /page-title -->
+
+  <!-- contact -->
+  <section class="section position-relative" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto text-center">
+          <div class="row align-items-center">
+            <div class="col-lg-12 mx-auto text-center">
+              <div class="row align-items-center">
+                <div class="col-12 text-center">
+                  <h2 class="text-black font-primary">Fale conosco</h2>
+                  <div class="section-border ml-12"></div>
+                </div>
+              </div>
+
+              <div class="bg-white p-4">
+                <form id="form">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input required type="text" id="name" name="name" class="form-control mb-4 px-0"
+                        placeholder="Nome:">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input required type="text" id="email" name="email" class="form-control mb-4 px-0"
+                        placeholder="Email:">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" id="phone" name="phone" class="form-control mb-4 px-0" placeholder="Telefone:">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <input required type="text" id="subject" name="subject" class="form-control mb-4 px-0"
+                        placeholder="Assunto:">
+                    </div>
+                  </div>
+                  <textarea name="message" id="message" class="form-control mb-4 px-0"
+                    placeholder="Como podemos te ajudar?" required></textarea>
+                  <button type="submit" class="btn btn-primary form-btn">Enviar</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /contact -->
+
+  <!-- footer -->
+  <footer class="position-relative bg-primary">
+    <div class="pb-4">
+      <div class="container">
+
+        <div class="section-border"></div>
+
+        <div class="row">
+          <div class="col-12 text-center footer-info">
+            <p class="text-primary">Kreativé Media | © 2023 - Todos os direitos reservados</p>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-around">
+
+          <div class="text-center footer-info">
+            <span class="d-flex gap-3">
+              <a class="p-1 text-black" href="https://www.instagram.com/kreative_media_marketing/" target="_blank"><i
+                  class="fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+              <p class="text-primary mb-0">@kreative_media_marketing</p>
+            </span>
+          </div>
+
+          <div class="text-center footer-info">
+            <span class="d-flex gap-3">
+              <a class="p-1 text-black"
+                href="https://api.whatsapp.com/send?phone=5551981186661&text=Ol%C3%A1,%20tudo%20bem?%20Estou%20entrando%20em%20contato%20com%20a%20Kreativ%C3%A9%20Media%20porque%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20oferecidos%20pela%20ag%C3%AAncia."
+                target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
+              <p class="text-primary mb-0">(51) 98118-6661</p>
+            </span>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- venobox -->
+  <script src="plugins/venobox/venobox.min.js"></script>
+  <!-- shuffle -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+  <!-- apear js -->
+  <script src="plugins/counto/apear.js"></script>
+  <!-- counter -->
+  <script src="plugins/counto/counTo.js"></script>
+  <!-- card slider -->
+  <script src="plugins/card-slider/js/card-slider-min.js"></script>
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
