@@ -14,8 +14,6 @@ body {
   color: #6c6c86;
   background-color: #fff;
   overflow-x: hidden;
-  background: url("../images/backgrounds/background-primary.png") no-repeat;
-  background-size: 100% 100%;
 }
 
 p {
