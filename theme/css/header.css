@@ -28,19 +28,6 @@
   max-width: 200px;
 }
 
-.header .logo h1 {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  color: #fff;
-  font-family: var(--font-primary);
-}
-
-.header .logo h1 span {
-  color: #f96f59;
-}
-
 .sticked-header-offset {
   margin-top: 70px;
 }

@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="pt-br">
 
 <head>
@@ -49,35 +42,36 @@
     <i class="fa fa-whatsapp my-float"></i>
   </a>
 
-  <header class="header navigation" id="header">
+  <header id="header" class="navigation header d-flex align-items-center">
 
-    <div class="container">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img class="brand-logo" src="images/logos/horizontal-white.png" alt="Kreativé Media">
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="./index.html#header">Home</a></li>
+          <li><a href="./about.html">Sobre nós</a></li>
+          <li><a href="./index.html#services">Serviços</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+          <li>
+            <span class="social-medias">
+              <a class="text-black text-center" href="https://www.instagram.com/kreative_media_marketing/"
+                target="_blank"><i class="fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+              <a class="text-black"
+                href="https://api.whatsapp.com/send?phone=5551981186661&text=Ol%C3%A1,%20tudo%20bem?%20Estou%20entrando%20em%20contato%20com%20a%20Kreativ%C3%A9%20Media%20porque%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20oferecidos%20pela%20ag%C3%AAncia."
+                target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
-      <label for="menu-control">
-        <i class="ti-menu menu-button"></i>
-      </label>
+            </span>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
 
-      <a class="navbar-brand" href="index.html"><img class="brand-logo" src="images/logos/horizontal-white.png"
-          alt="Kreativé Media"></a>
+      <i class="mobile-nav-toggle mobile-nav-show ti-menu"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none ti-close"></i>
 
-      <input type="checkbox" id="menu-control" class="menu-control">
-      <ul class="menu">
-        <li class="menu-item active">
-          <a href="./index.html">Home</a>
-        </li>
-        <li class="menu-item">
-          <a href="./about.html">Sobre nós</a>
-        </li>
-        <li class="menu-item">
-          <a href="#services">Serviços</a>
-        </li>
-        <li class="menu-item">
-          <a href="./contact.html">Contato</a>
-        </li>
-      </ul>
     </div>
-
-  </header>
+  </header><!-- End Header -->
 
   <!-- page-title -->
   <section class="page-title bg-cover" data-background="./images/banner/banner2.png">
@@ -157,7 +151,8 @@
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="img-box mb-40"><img class="clients-logo" src="./images/clients-logo/acquaflex.png" alt=""></div>
+            <div class="img-box mb-40"><img class="clients-logo" src="./images/clients-logo/acquaflex.png"
+                alt="Acquaflex"></div>
             <p class="testimonial text-white">"A Kreativé Media é uma agência de marketing digital excelente. Eles
               entenderam
               nossas necessidades específicas e nos guiaram durante todo o processo com muita transparência e
@@ -165,14 +160,16 @@
             </p>
           </div>
           <div class="carousel-item">
-            <div class="img-box mb-40"><img class="clients-logo" src="./images/clients-logo/universoeletro.png" alt="">
+            <div class="img-box mb-40"><img class="clients-logo" src="./images/clients-logo/universoeletro.png"
+                alt="Universo Eletro">
             </div>
             <p class="testimonial text-white">"A Kreativé Media nos ajudou a expandir nossos negócios online, fornecendo
               conselhos valiosos sobre melhorias no site e presença nas mídias sociais. Sua comunicação foi excelente e
               nos sentimos bem cuidados em cada etapa do processo."</p>
           </div>
           <div class="carousel-item">
-            <div class="img-box mb-40"><img class="clients-logo" src="./images/clients-logo/coffe283.png" alt=""></div>
+            <div class="img-box mb-40"><img class="clients-logo" src="./images/clients-logo/coffe283.png"
+                alt="Coffe 283"></div>
             <p class="testimonial text-white">"A Kreativé Media é incrível! Eles entenderam perfeitamente nossas
               necessidades e
               criaram campanhas de marketing personalizadas que realmente funcionaram. Além disso, a equipe é muito
@@ -194,12 +191,15 @@
 
   <!-- call to action -->
   <section class="section" id="call-action">
-    <div class="container section-sm">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-1">
-          <h2 class="text-gradient-primary">Entre em contato!</h2>
-          <p class="h4 font-weight-bold text-white mb-4">Para mais informações ou dúvidas</p>
+    <div class="container">
 
+      <div class="illustration-section">
+        <div class="illustration-2">
+          <img src="./images/illustrations/illustration3.png" alt="Imagem ilustrativa">
+        </div>
+        <div class="infos-content" style="float: right;">
+          <span class="subtitle text-gradient-primary">Para mais informações ou dúvidas</span>
+          <h2 class="section-title font-primary">Entre em contato!</h2>
           <a href="https://api.whatsapp.com/send?phone=5551981186661&text=Ol%C3%A1,%20tudo%20bem?%20Estou%20entrando%20em%20contato%20com%20a%20Kreativ%C3%A9%20Media%20porque%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20oferecidos%20pela%20ag%C3%AAncia."
             class="btn-wpp col-12 d-flex justify-content-start align-items-center">
             <i class="fa fa-whatsapp" style="margin-right: 20px;"></i>
@@ -207,10 +207,9 @@
               Mensagem
             </span>
           </a>
-
-
         </div>
       </div>
+
     </div>
   </section>
   <!-- /call to action -->

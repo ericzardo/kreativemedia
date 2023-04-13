@@ -143,10 +143,6 @@
     margin: 10px 0;
   }
 
-  .-center {
-    margin-top: 50px;
-  }
-
   .illustration-center img {
     max-width: 400px;
   }
@@ -209,7 +205,7 @@
   }
 
   .mobile-nav-show {
-    color: #000;
+    color: #fff;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;

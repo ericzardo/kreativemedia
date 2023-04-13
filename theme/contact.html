@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="pt-br">
 
 <head>
@@ -81,35 +74,36 @@
     <i class="fa fa-whatsapp my-float"></i>
   </a>
 
-  <header class="header navigation" id="header">
+  <header id="header" class="navigation header d-flex align-items-center">
 
-    <div class="container">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img class="brand-logo" src="images/logos/horizontal-white.png" alt="Kreativé Media">
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="./index.html#header">Home</a></li>
+          <li><a href="./about.html">Sobre nós</a></li>
+          <li><a href="./index.html#services">Serviços</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+          <li>
+            <span class="social-medias">
+              <a class="text-black text-center" href="https://www.instagram.com/kreative_media_marketing/"
+                target="_blank"><i class="fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+              <a class="text-black"
+                href="https://api.whatsapp.com/send?phone=5551981186661&text=Ol%C3%A1,%20tudo%20bem?%20Estou%20entrando%20em%20contato%20com%20a%20Kreativ%C3%A9%20Media%20porque%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20oferecidos%20pela%20ag%C3%AAncia."
+                target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
-      <label for="menu-control">
-        <i class="ti-menu menu-button"></i>
-      </label>
+            </span>
+          </li>
+        </ul>
+      </nav><!-- .navbar -->
 
-      <a class="navbar-brand" href="index.html"><img class="brand-logo" src="images/logos/horizontal-white.png"
-          alt="Kreativé Media"></a>
+      <i class="mobile-nav-toggle mobile-nav-show ti-menu"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none ti-close"></i>
 
-      <input type="checkbox" id="menu-control" class="menu-control">
-      <ul class="menu">
-        <li class="menu-item active">
-          <a href="./index.html">Home</a>
-        </li>
-        <li class="menu-item">
-          <a href="./about.html">Sobre nós</a>
-        </li>
-        <li class="menu-item">
-          <a href="#services">Serviços</a>
-        </li>
-        <li class="menu-item">
-          <a href="./contact.html">Contato</a>
-        </li>
-      </ul>
     </div>
-
-  </header>
+  </header><!-- End Header -->
 
   <!-- page-title -->
   <section class="page-title bg-cover" data-background="./images/banner/banner2.png">
